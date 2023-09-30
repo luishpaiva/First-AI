@@ -1,8 +1,8 @@
 import pandas as pd
 
-dataset = pd.read_csv('D:\\Programação\\Projetos Python\\ai_cancer\\cancer.csv') # ler arquivo csv
+dataset = pd.read_csv('cancer.csv') # ler arquivo csv
 
-x = dataset.drop(columns=["diagnosis(1=m, 0=b"]) # x recebe todas colunas, exceto 'diagnosis'
+x = dataset.drop(columns=["diagnosis(1=m, 0=b)"]) # x recebe todas colunas, exceto 'diagnosis'
 y = dataset["diagnosis(1=m, 0=b)"] # y recebe a coluna 'diagnosis'
 
 from sklearn.model_selection import train_test_split
